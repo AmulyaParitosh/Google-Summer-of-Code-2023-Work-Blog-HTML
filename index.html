@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Amulya Paritosh Google Summer of Code</title>
+    <meta property="og:title" content="Amulya Paritosh Google Summer of Code" />
+    <meta
+      property="og:description"
+      content="Component Management Plugin - FreeCAD. Amulya Paritosh - Google Summer of Code 2023 at FreeCAD work showcase."
+    />
+    <meta
+      property="og:image"
+      content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/72ffb865-40f2-43e3-a7a4-220163184021/0dd4d9b8-cd92-4ae8-b8ca-f7ee7a0639b2?org_if_sml=1"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="gsoc2023work-product-submission-container">
+        <div class="gsoc2023work-product-submission-container01">
+          <div class="gsoc2023work-product-submission-container02">
+            <div class="gsoc2023work-product-submission-container03">
+              <img
+                alt="image"
+                src="public/google_summer_of_code_logo_(2021).svg"
+                class="gsoc2023work-product-submission-image"
+              />
+              <span class="gsoc2023work-product-submission-text">2023</span>
+            </div>
+            <img
+              alt="image"
+              src="public/freecad-logo.svg"
+              class="gsoc2023work-product-submission-image1"
+            />
+          </div>
+        </div>
+        <h1 class="gsoc2023work-product-submission-text01">
+          Work Product Submission
+        </h1>
+        <h1 class="gsoc2023work-product-submission-text02">
+          UI tool for fetching online content.
+        </h1>
+        <div class="gsoc2023work-product-submission-container04">
+          <div class="gsoc2023work-product-submission-container05">
+            <h1 class="gsoc2023work-product-submission-text03">
+              Brief Summary of Project
+            </h1>
+            <span class="gsoc2023work-product-submission-text04">
+              The project aimed to design a FreeCAD components library
+              management tool that can fetches the components from different
+              online repositories, without the need to download a single bulky
+              Library of components hosted on github. The library management
+              tool to be developed aimed to provide following features:-
+            </span>
+            <ul class="gsoc2023work-product-submission-ul list">
+              <li class="list-item">
+                <span class="gsoc2023work-product-submission-text05">
+                  Browse the existing dataset of all the components
+                </span>
+              </li>
+              <li class="list-item">
+                <span class="gsoc2023work-product-submission-text06">
+                  Management of different file formats for same component
+                </span>
+              </li>
+              <li class="list-item">
+                <span class="gsoc2023work-product-submission-text07">
+                  Download individual component files
+                </span>
+              </li>
+              <li class="list-item">
+                <span class="gsoc2023work-product-submission-text08">
+                  Manage user components
+                </span>
+              </li>
+              <li class="list-item">
+                <span class="gsoc2023work-product-submission-text09">
+                  Structured online repository storage system
+                </span>
+              </li>
+              <li class="list-item">
+                <span class="gsoc2023work-product-submission-text10">
+                  Local storage structure
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="gsoc2023work-product-submission-container06">
+          <div class="gsoc2023work-product-submission-container07">
+            <h1 class="gsoc2023work-product-submission-text11">
+              What Work Was Done
+            </h1>
+            <span class="gsoc2023work-product-submission-text12">
+              <span>Two Repositories were made namely</span>
+              <a href="#cms">Component Management System</a>
+              <span>and</span>
+              <a href="#cla">Component Library Addon</a>
+              <span>
+                &nbsp;were created. These Projects together makes a FreeCAD
+                Addon which facilitates management of public
+                component(3D-models) by using a distributed github-repositories
+                system. This is done with a database which maintains the
+                location of different components and exposis these information
+                through REST-API.
+              </span>
+              <br />
+            </span>
+            <div class="gsoc2023work-product-submission-container08">
+              <img
+                alt="image"
+                src="public/plugin%20structure-500w.png"
+                class="gsoc2023work-product-submission-image2"
+              />
+              <img
+                src="public/er%20diagram-500h.png"
+                alt="image"
+                class="gsoc2023work-product-submission-image3"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="gsoc2023work-product-submission-container09">
+          <div class="gsoc2023work-product-submission-container10">
+            <a
+              href="https://github.com/FreeCAD/FreeCAD-Component-Management-System"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="gsoc2023work-product-submission-link02"
+            >
+              <h1 id="cms" class="gsoc2023work-product-submission-text17">
+                Component Management System
+              </h1>
+            </a>
+            <span class="gsoc2023work-product-submission-text18">
+              <span>
+                The Component Management System is a utility application
+                designed to manage FreeCAD models from different online
+                repositories. It provides features to seamlessly browse,
+                download, and organize individual models while avoiding the need
+                to download the entire library. The system is built using Flask,
+                SQLite, and SQLAlchemy, and it serves as the backend API for the
+              </span>
+              <a
+                href="https://github.com/FreeCAD/FreeCAD-Component-Library-Addon"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="gsoc2023work-product-submission-link03"
+              >
+                Component Library Addon
+              </a>
+              <span>.</span>
+            </span>
+            <span class="gsoc2023work-product-submission-text21">
+              Features :-
+            </span>
+            <ul class="list">
+              <li class="list-item">
+                <span class="gsoc2023work-product-submission-text22">
+                  Browsable online repository of FreeCAD components.
+                </span>
+              </li>
+              <li class="list-item">
+                <span class="gsoc2023work-product-submission-text23">
+                  Individual component download with preview and metadata.
+                </span>
+              </li>
+              <li class="list-item">
+                <span class="gsoc2023work-product-submission-text24">
+                  Integration with the Component Library Plugin frontend.
+                </span>
+              </li>
+              <li class="list-item">
+                <span class="gsoc2023work-product-submission-text25">
+                  Structured online repository storage system.
+                </span>
+              </li>
+              <li class="list-item">
+                <span class="gsoc2023work-product-submission-text26">
+                  RESTful API endpoints for component management.
+                </span>
+              </li>
+            </ul>
+            <img
+              alt="image"
+              src="public/blog_diagrams-cms%20api.drawio-800w.png"
+              class="gsoc2023work-product-submission-image4"
+            />
+          </div>
+          <div class="gsoc2023work-product-submission-container11">
+            <a
+              href="https://github.com/FreeCAD/FreeCAD-Component-Library-Addon"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="gsoc2023work-product-submission-link04"
+            >
+              <h1 id="cla" class="gsoc2023work-product-submission-text27">
+                Component Library Addon
+              </h1>
+            </a>
+            <span class="gsoc2023work-product-submission-text28">
+              The Component Library Plugin is a PySide6 application designed to
+              enhance FreeCAD's capabilities by providing a user-friendly
+              interface for managing FreeCAD models from various repositories.
+              This plugin integrates with the Component Management System
+              backend API to seamlessly access, download, and insert components
+              into FreeCAD documents.
+            </span>
+            <span class="gsoc2023work-product-submission-text29">
+              Features :-
+            </span>
+            <ul class="list">
+              <li class="list-item">
+                <span class="gsoc2023work-product-submission-text30">
+                  Browse and preview components available in the online
+                  repository.
+                </span>
+              </li>
+              <li class="list-item">
+                <span class="gsoc2023work-product-submission-text31">
+                  Download and manage individual components for local use.
+                </span>
+              </li>
+              <li class="list-item">
+                <span class="gsoc2023work-product-submission-text32">
+                  Add and manage user-specific models in the local library.
+                </span>
+              </li>
+              <li class="list-item">
+                <span class="gsoc2023work-product-submission-text33">
+                  Insert downloaded components directly into FreeCAD
+                  documents.(yet to implement)
+                </span>
+              </li>
+              <li class="list-item">
+                <span class="gsoc2023work-product-submission-text34">
+                  <span>Upload components to</span>
+                  <a
+                    href="https://github.com/FreeCAD/FreeCAD-Component-Management-System"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="gsoc2023work-product-submission-link05"
+                  >
+                    Component Management System
+                  </a>
+                  <span>for public access.</span>
+                </span>
+              </li>
+            </ul>
+            <img
+              src="public/blog_diagrams-local%20api.drawio-600h.png"
+              alt="image"
+              class="gsoc2023work-product-submission-image5"
+            />
+            <img
+              src="public/blog_diagrams-local%20storage.drawio-500h.png"
+              alt="image"
+              class="gsoc2023work-product-submission-image6"
+            />
+          </div>
+        </div>
+        <div class="gsoc2023work-product-submission-container12">
+          <div class="gsoc2023work-product-submission-container13">
+            <h1 class="gsoc2023work-product-submission-text37">
+              What Code Got Merged
+            </h1>
+            <span class="gsoc2023work-product-submission-text38">
+              <span>Whole code got forked from</span>
+              <a
+                href="https://github.com/AmulyaParitosh/Component-Management-System"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="gsoc2023work-product-submission-link06"
+              >
+                my public Component Management System repository
+              </a>
+              <span>and</span>
+              <a
+                href="https://github.com/AmulyaParitosh/Component_Library_Plugin"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="gsoc2023work-product-submission-link07"
+              >
+                my public Component Library Addon repository&nbsp;
+              </a>
+              <span>to FreeCAD.</span>
+              <br />
+            </span>
+            <h1 class="gsoc2023work-product-submission-text43">
+              <span>Links to the merged work</span>
+              <br />
+            </h1>
+            <ul class="list">
+              <li class="list-item">
+                <a
+                  href="https://github.com/FreeCAD/FreeCAD-Component-Management-System"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="gsoc2023work-product-submission-link08"
+                >
+                  Component Management System
+                </a>
+              </li>
+              <li class="list-item">
+                <a
+                  href="https://github.com/FreeCAD/FreeCAD-Component-Library-Addon"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="gsoc2023work-product-submission-link09"
+                >
+                  Component Library Addon
+                </a>
+              </li>
+            </ul>
+            <h1 class="gsoc2023work-product-submission-text46">
+              What Code Did Not Got Merged
+            </h1>
+            <span class="gsoc2023work-product-submission-text47">
+              <span>
+                There is nothing that did not got merged and the whole
+                repository got forked.
+              </span>
+              <br />
+            </span>
+          </div>
+        </div>
+        <div class="gsoc2023work-product-submission-container14">
+          <div class="gsoc2023work-product-submission-container15">
+            <h1 class="gsoc2023work-product-submission-text50">What's Next</h1>
+            <ul class="list">
+              <li class="list-item">
+                <a
+                  href="https://github.com/FreeCAD/FreeCAD-Component-Management-System"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="gsoc2023work-product-submission-link10"
+                >
+                  <span>
+                    Insertion of Components from the Component Library Addon to
+                    the FreeCAD file.
+                  </span>
+                  <br />
+                </a>
+              </li>
+              <li class="list-item">
+                <a
+                  href="https://github.com/FreeCAD/FreeCAD-Component-Library-Addon"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="gsoc2023work-product-submission-link11"
+                >
+                  Updation of components
+                </a>
+              </li>
+              <li class="list-item">
+                <span class="gsoc2023work-product-submission-text53">
+                  Making a adaptive Taggs system for uses of new tags
+                </span>
+              </li>
+              <li class="list-item">
+                <span class="gsoc2023work-product-submission-text54">
+                  Making a ratting system
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="gsoc2023work-product-submission-container16">
+          <div class="gsoc2023work-product-submission-container17">
+            <h1 class="gsoc2023work-product-submission-text55">
+              Conclusion and Acknowledgement
+            </h1>
+            <span class="gsoc2023work-product-submission-text56">
+              <span>
+                In summary, the project "UI Tool for Fetching Online Content"
+                has successfully addressed the need for a user-friendly solution
+                to manage FreeCAD components from various online sources. The
+                tool's development enhances component accessibility, browsing,
+                and utilization, eliminating the requirement for extensive
+                downloads. By implementing key features like component
+                management, browsing, and user contribution, the project
+                significantly improves the FreeCAD experience.
+              </span>
+              <br />
+              <br />
+              <span>
+                The tool's potential for future expansion, accommodating a
+                growing FreeCAD community, is clear. The successful completion
+                of this project signifies a notable advancement for the FreeCAD
+                ecosystem.
+              </span>
+              <br />
+              <br />
+              <span>
+                I extend my gratitude to my mentors for their guidance and
+                support and the FreeCAD community for their contributions. This
+                project stands as a collaborative effort, and while this chapter
+                concludes, the journey of innovation and improvement persists.
+              </span>
+              <br />
+            </span>
+          </div>
+        </div>
+        <div class="gsoc2023work-product-submission-container18">
+          <nav class="social-links-nav social-links-root-class-name">
+            <a
+              href="https://github.com/AmulyaParitosh/"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="social-links-link"
+            >
+              <span>Github</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/amulyaparitosh"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="social-links-link1"
+            >
+              <span>Linkedin</span>
+            </a>
+            <a
+              href="mailto:amulya1171@gmail.com?subject="
+              class="social-links-link2"
+            >
+              Email: amulya1171@gmail.com
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
